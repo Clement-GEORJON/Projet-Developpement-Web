@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<meta charset="utf-8">
+		<title>Projet individuel</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src=scripts/script.js></script>
+	</head>
+
+
+	<body>
+
+		<header>
+			<table id="menu">
+				<tr>
+					<td class="menuBouton"><a href="accueuil.html"><figure><img src="images/home.png" class="logoMenu" /></figure></a></td>
+					<td class="menuBouton"><a href="pages/train.html"><h1>Gares</h1></a></td>
+					<td class="menuBouton"><a href="pages/vol.html"><h1>Aéroports</h1></a></td>
+					<td class="menuBouton"><a href="pages/bus.html"><h1>Bus</h1></a></td>
+					<td class="menuBouton"><a href="pages/hotel.html"><h1>Hôtels</h1></a></td>
+				</tr>
+			</table>
+		</header>
+
+		<center id="formulaire">
+			<table>
+				<form>
+					<th colspan="4">
+						<h1>Réservez en un clic !</h1>
+					</th>
+					<tr>
+						<td colspan="1">
+							<input type="radio" name="SimpleRetour" id="Simple"/>
+							<label for="Simple">Aller simple </label>
+						</td>
+						<td colspan="3">
+							<input type="radio" name="SimpleRetour" id="Retour" checked/>
+							<label for="Retour">Aller-retour </label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Mode de transport : </label>
+						</td>
+						<td class="etiquette">
+							<input type="radio" name="transport" id="train">
+							<label for="train">Train</label>
+						</td>
+						<td class="etiquette">
+							<input type="radio" name="transport" id="vol">
+							<label for="vol">Vol</label>
+						</td>
+						<td class="etiquette">
+							<input type="radio" name="transport" id="bus">
+							<label for="bus">Bus</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="Date">Date : </label>
+						</td>
+						<td colspan="3">
+							<input type="date" name="Date" required/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="AuDepartDe">Au départ de : </label>
+						</td>
+						<td colspan="3">
+							<input type="text" name="AuDepartDe" list="SuggestionsDeparts" required/>
+								<datalist id="SuggestionsDeparts">
+									<option value ="Paris Gare du Nord"/>
+									<option value ="Paris Gare de Lyon"/>
+									<option value ="Paris Gare Montparnasse"/>
+									<option value ="Paris Saint-Lazarre"/>
+									<option value ="Lyon Saint-Exupéry"/>
+									<option value ="Lyon Part-Dieu"/>
+									<option value ="Bordeaux Saint-Jean"/>
+									<option value ="Nantes"/>
+									<option value ="Lille Flandres"/>
+									<option value ="Lille Europe"/>
+								</datalist>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="ArriveeA">Arrivée à : </label>
+						</td>
+						<td colspan="3">
+							<input type="text" name="ArriveeA" list="SuggestionsArrivee" required/>
+								<datalist id="SuggestionsArrivee">
+									<option value ="Paris Gare du Nord"/>
+									<option value ="Paris Gare de Lyon"/>
+									<option value ="Paris Gare Montparnasse"/>
+									<option value ="Paris Saint-Lazarre"/>
+									<option value ="Lyon Saint-Exupéry"/>
+									<option value ="Lyon Part-Dieu"/>
+									<option value ="Bordeaux Saint-Jean"/>
+									<option value ="Nantes"/>
+									<option value ="Lille Flandres"/>
+									<option value ="Lille Europe"/>
+								</datalist>
+						</td>
+					</tr>
+					<tr>	
+						<td>
+							<label for="Direct">Trajet direct : </label>
+						</td>
+						<td colspan="3">
+							<input type="checkbox" name="TrajetDirect" id="Direct"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="NombreDePassagers">Nombres de passagers : </label>
+						</td>
+						<td colspan="3">
+							<input type="text" name="NombreDePassagers" required/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="CartesAbonnements">Cartes ou Abonnements : </label>
+						</td>
+						<td colspan="3">
+							<input type="text" name="CartesAbonnements"/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<center>
+								<input type="Submit" name="Rechercher" value="Rechercher" />
+							</center>
+						</td>
+					</tr>
+					
+				</form>
+			</table>
+		</center>
+
+		<center id="articles">
+
+			<article id="gares">
+					<aside><h1>Les gares que nous déservont en France !</h1></aside>
+					<a href="pages/train.html"></a>
+			</article>
+
+			<article id="aeroports">
+					<aside><h1>Les aéroports disponibles</h1></aside>
+					<a href="pages/vol.html"></a>
+			</article>
+
+			<article id="buses">
+					<aside><h1>Voyages en bus à prix réduit !</h1></aside>
+					<a href="pages/bus.html"></a>
+			</article>
+
+			<article id="hotels">
+					<aside><h1>Quel hôtel est le mieux adapté pour votre séjour ?</h1></aside>
+					<a href="pages/hotel.html"></a>
+			</article>
+
+		</center>
+
+	</body>
+
+
+</html>

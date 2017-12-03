@@ -1,0 +1,49 @@
+/************Champs de saisie de la ville*****************/
+
+#saisirVille {
+	margin-top: 50px;
+}
+
+#saisirVille table td{
+	color: white;
+}
+
+#saisirVille table{
+	background-color: #ffa500;
+	border-radius: 2px;
+	padding:5px;
+}
+
+#saisirVille table label{
+	font-size: 35px;
+}
+
+#saisirVille table input{
+	width: 50%;
+	height: 100%;
+}
+
+/***********Corps de page***************/
+
+#rechercher table{
+	background-color: white;
+}
+
+#rechercher th {
+	text-align: center;
+	font-size: 35px;
+}
+
+#rechercher td, th {
+	border-style: solid;
+	border-width: 1px;
+}
+
+article {
+	width:800px;
+	background-color: #45ef6a;
+}
+
+article h1 {
+	color: white;
+}
